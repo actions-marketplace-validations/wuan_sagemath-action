@@ -3,6 +3,8 @@
 set -eo pipefail
 shopt -s extglob globstar nullglob
 
+who am i
+
 source_file="${1}"
 working_directory="${2}"
 
