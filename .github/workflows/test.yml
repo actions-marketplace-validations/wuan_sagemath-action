@@ -1,0 +1,18 @@
+name: Test Github Action
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Use basic document
+        uses: ./
+        with:
+          source_file: test.sage
+          working_directory: test/

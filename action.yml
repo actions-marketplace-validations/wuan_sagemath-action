@@ -1,0 +1,18 @@
+name: GitHub Action for SageMath
+description: GitHub Action to run SageMath
+author: Andreas Würl
+inputs:
+  source_file:
+    description: The SageMath source file to be used
+    required: true
+  working_directory:
+    description: The working directory for this action
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.source_file }}
+    - ${{ inputs.working_directory }}
+branding:
+  icon: box
+  color: blue
