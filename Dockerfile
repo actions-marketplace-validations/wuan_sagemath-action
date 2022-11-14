@@ -1,7 +1,7 @@
 FROM sagemath/sagemath:latest
 
 COPY \
-  LICENSE \
+  LICENSE.md \
   README.md \
   entrypoint.sh \
   /root/
