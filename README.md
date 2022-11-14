@@ -12,9 +12,8 @@ Each input is provided as a key inside the `with` section of the action.
   ```yaml
   - uses wuan/sagemath-action@v1
     with:
-      source_file: |
-        input1.sagemath.sage
-        input2.sagemath.sage
+      source_file:
+        input.sagemath.sage
   ```
   You can also pass multiple files as a multi-line string to compile multiple documents. For example:
   ```yaml
