@@ -4,6 +4,6 @@ COPY \
   LICENSE.md \
   README.md \
   entrypoint.sh \
-  /root/
+  /
 
-ENTRYPOINT ["/root/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
